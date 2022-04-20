@@ -1,0 +1,121 @@
+.wallet_container {
+    padding: 1%;
+}
+
+.wallet_section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // margin-right: -4%;
+    .title1 {
+        color: white;
+        font-size: 1.5rem;
+    }
+    .panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        
+        .title2 {
+            color: white;
+            font-size: 1rem;
+        }
+    }
+}
+
+.wallet_section2 {
+    display: flex;
+    flex-direction: row;
+
+    .left_part {
+        flex: 4;
+        padding: 0 20px;
+        
+        .panel {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 14px;
+            .title1 {
+                padding: 20px;
+                color: white;
+                font-size: 1.1rem;
+                font-weight: 700;
+            }
+            .title2 {
+                padding: 20px;
+            }
+        }
+        .panel:hover:not(.selected) {
+            background-color: rgba($color: #FFFFFF, $alpha: 0.05);
+        }
+        .selected {
+            background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+        }
+    }
+    .right_part {
+        flex: 6;
+
+        .panel {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 40px;
+            .panel_logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                .title1 {
+                    color: white;
+                    font-size: 1.8rem;
+                    text-align: center;
+                    padding: 30px 0;
+                    letter-spacing: 2px;
+                }
+            }
+            .panel_box {
+                background-color: #191c24;
+                border-radius: 14px;
+                margin: 0px -20px;
+                .address_box {
+                    padding: 30px 20px;
+                    .box {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 30px;
+                        .box_1 {
+                            color: white;
+                            font-size: 1.05rem;
+                        }
+                        .box_2 {
+                            color: rgba($color: #FFFFFF, $alpha: 0.8);
+                            font-size: 1rem;
+                            word-break: break-all
+                        }
+                    }
+                }
+            }
+            .title2 {
+                color: white;
+                font-size: 15px;
+                line-height: 1.7rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+.card {
+    margin-bottom: 20px !important;
+}
+
+@media (max-width: 1100px) {
+    .wallet_section2 {
+        flex-direction: column;
+    }
+}

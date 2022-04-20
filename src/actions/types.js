@@ -1,0 +1,3 @@
+export const GET_BNBPRICE = 'GET_BNBPRICE';
+export const GET_BITCOINPRICE = 'GET_BITCOINPRICE';
+export const GET_ERROR = 'GET_ERROR';

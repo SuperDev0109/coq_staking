@@ -1,0 +1,232 @@
+.staking_container {
+    padding: 1%;
+}
+
+.staking_content {
+    width: 80%;
+    margin: auto;
+}
+
+.staking_section1 {
+    .title1 {
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+
+.staking_section2 {
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .left_panel {
+        display: flex;
+        flex-direction: column;
+        .title1 {
+            color: white;
+            font-size: 1.31rem;
+        }
+        .title2 {
+            padding-top: 20px;
+            color: white;
+            font-size: 2.25rem;
+        }
+        .title3 {
+            color: white;
+            font-size: 1.12rem;
+        }
+    }
+    .right_panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btnDefault {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .title1 {
+            color: white;
+            font-size: .8rem;
+        }
+    }
+}
+
+.staking_section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+    .panel {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .title1 {
+            color: white;
+            font-size: 1.31rem;
+        }
+        .title2 {
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.staking_section4_title {
+    padding: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: white !important;
+    font-weight: 500;
+}
+
+.staking_section5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+
+    .left_part {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        padding-right: 30px;
+
+        .dayPanel {
+            border-radius: 19px;
+            padding: 1rem 2rem;
+            cursor: pointer;
+            // background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+            background-color: #191c24;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .dayPanel:hover {
+            // background-color: #191c24;
+            background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+        }
+        .selected {
+            background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+        }
+        .titleBox {
+            margin-top: auto !important;
+            .title1 {
+                color: white;
+                font-size: 1.93rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .right_part {
+        display: flex;
+        flex-direction: column;
+        flex: 7;
+        background-color: #191c24;
+        border-radius: 19px;
+        padding: 20px;
+
+        .title {
+            color: white;
+            font-size: 1.85rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 500;
+        }
+        .panelBox {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            .panel {
+                display: flex;
+                flex-direction: column;
+                // gap: 20px;
+                background-color: #27293d;
+                border-radius: 15px;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 200px;
+                padding: 0.8rem;
+                .title1 {
+                    color: white;
+                    font-size: 1.36rem;
+                }
+                .title2 {
+                    color: white;
+                    font-size: 2.7rem;
+                }
+                .title3 {
+                    color: white;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .inputField {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.btn-default {
+    width: 250px;
+    height: 50px;
+    font-size: 1rem !important;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+    .titleBox {
+        .title1 {
+            font-size: 1.7rem !important;
+        }
+    }
+    .staking_section5 {
+        .left_part {
+            padding-right: 10px !important;
+        }
+    }
+    .panelBox {
+        .panel {
+            width: 160px !important;
+            height: 160px !important;
+        }
+    }
+}
+@media (max-width: 1600px) {
+    .staking_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .staking_section5 {
+        .left_part {
+            flex: 4;
+        }
+        .right_part {
+            flex: 6;
+        }
+    }
+    .staking_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .staking_section5 {
+        flex-direction: column;
+    }
+    .panelBox {
+        .panel {
+            width: 200px !important;
+            height: 200px !important;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.buycoq_container {
+    padding: 1%;
+}
+
+.buycoq_section1 {
+    .title1 {
+        color: white;
+        font-size: 1.5rem;
+    }
+    .panel {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        
+        .title2 {
+            color: white;
+            font-size: 1rem;
+        }
+    }
+}
+
+.buycoq_section2 {
+    display: flex;
+    flex-direction: row;
+    
+    .left_part {
+        flex: 4;
+        padding-right: 20px;
+        border-right: 1px solid rgba($color: #FFFFFF, $alpha: 0.1);
+        .panel {
+            cursor: pointer;
+            border-radius: 14px;
+            padding: 22px 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+            
+            .logo {
+                flex: 1;
+            }
+            .logo_detail {
+                flex: 3;
+            }
+            .title1 {
+                color: white;
+                font-weight: 500;
+                font-size: 1.1rem;
+            }
+            .title2 {
+                color: rgba($color: #FFFFFF, $alpha: 0.8);
+                font-size: 1rem;
+            }
+        }
+        .panel:hover:not(.selected) {
+            background-color: rgba($color: #FFFFFF, $alpha: 0.05);
+        }
+        .selected {
+            background-color: #1e1e25;
+        }
+    }
+    .right_part {
+        flex: 6;
+
+        .pancake_section {
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .title1 {
+                color: white;
+                font-size: 1.5rem;
+            }
+            .title2 {
+                color: rgba($color: #FFFFFF, $alpha: 0.8);
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .buycoq_section2 {
+        .left_part {
+            flex: 5;
+        }
+        .right_part {
+            flex: 5;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .buycoq_section2 {
+        flex-direction: column;
+        .left_part {
+            border-right: 0px;
+        }
+    }
+}

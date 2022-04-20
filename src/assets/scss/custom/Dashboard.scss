@@ -1,0 +1,157 @@
+.dash_container {
+    padding: 3%;
+}
+
+.dash_section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 185px;
+    .title1 {
+        font-size: 1.1rem;
+        color: white;
+    }
+    .pair {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title2 {
+            font-size: 1.85rem;
+            color: white;
+        }
+    }
+    .title3 {
+        color: #6c7293;
+        font-size: 1.2rem;
+    }
+}
+
+.dash_section_tokenomics {
+    .title1 {
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+    }
+    .panel {
+        // background-color: #191c24;
+        padding: 15px 15px;
+        border-radius: 14px;
+
+        .title2 {
+            color: white;
+            padding-top: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .title3 {
+            color: white;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.dash_section_contract {
+    .panel {
+        display: flex;
+        align-items: center;
+    }
+    .title1 {
+        width: 150px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    a {
+        color: #6c7293;
+    }
+    a:hover {
+        color: white;
+    }
+    .label1 {
+        width: calc(100% - 150px);
+        font-size: 1rem;
+        color: #6c7293;
+    }
+    .label2 {
+        width: calc(100% - 150px);
+        font-size: 1rem;
+        color: white;
+    }
+}
+
+.dash_section_market1 {
+    .title1 {
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 3%;
+    }
+    .panel {
+        background-color: #191c24;
+        padding: 10px 15px;
+        border-radius: 14px;
+
+        .title2 {
+            color: white;
+            padding-top: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .title3 {
+            color: white;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.apexcharts-legend-text {
+    color: white !important;
+    font-size: 13px !important;
+}
+.flex_item {
+    display: flex;
+    justify-content: stretch;
+}
+
+@media (min-width: 992px)  {
+    .res_chart .col-lg-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .res_chart .col-lg-8 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px)  {
+    .res_chart .col-lg-4 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+    .res_chart .col-lg-8 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .dash_section_market1:first-child > .title1 {
+            font-size: 1.18rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .res_chart .col-lg-4 {
+        flex: 0 0 33.33333% !important;
+        max-width: 33.33333% !important;
+    }
+    .res_chart .col-lg-8 {
+        flex: 0 0 66.6666666% !important;
+        max-width: 66.6666666% !important;
+    }
+}
+
+.ps__thumb-y, .ps__rail-y {
+    height: 0 !important;
+}
